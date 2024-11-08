@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import Swal from 'sweetalert2';
 import flotasData from '../data/flotas.json';
 import './FlotaViewer.css';
 
 function FlotaViewer() {
-    const [flotasDisponibles, setFlotasDisponibles] = useState([]); 
+    const [flotasDisponibles, setFlotasDisponibles] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
     const [newFlotaName, setNewFlotaName] = useState('');
 
@@ -48,12 +48,12 @@ function FlotaViewer() {
         });
     };
 
-    const filteredFlotas = flotasDisponibles.filter(flota => 
+    const filteredFlotas = flotasDisponibles.filter(flota =>
        flota.nombre.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
     return (
-        <div className="add-flota-container">   
+        <div className="add-flota-container">
             <h3>Buscar Flota</h3>
             <input
                 type="text"

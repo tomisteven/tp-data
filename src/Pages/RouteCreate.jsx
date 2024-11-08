@@ -160,7 +160,7 @@ function RouteCreate() {
     };
 
     try {
-      const response = await axios.post(`${API_BASE_URL}/rutas`, routeData);
+      await axios.post(`${API_BASE_URL}/rutas`, routeData);
       Swal.fire({
         title: "¡Ruta enviada!",
         text: "La ruta se ha enviado al servidor.",

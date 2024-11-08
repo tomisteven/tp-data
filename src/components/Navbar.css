@@ -22,7 +22,11 @@
   text-align: center;
   align-items: center; /* Alineación vertical de los elementos */
   justify-content: center; /* Centra los elementos en la barra */
-  
+
+}
+
+.navbar-item{
+  font-size: 14px;
 }
 
 .navbar-link {
@@ -38,7 +42,7 @@
 }
 
 .navbar-link svg {
-  font-size: 1.5rem; /* Tamaño del icono */
+  font-size: 1rem; /* Tamaño del icono */
   margin-right: 8px; /* Espaciado entre el ícono y el texto */
 }
 

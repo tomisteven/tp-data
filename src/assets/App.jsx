@@ -1,5 +1,10 @@
 import { useContext } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import AutoSearch from "../Pages/AutoSearch";
 import AutoDetail from "../Pages/AutoDetail";
 import MechanicManagement from "../Pages/MechanicManagement";
@@ -49,189 +54,394 @@ import Perfil from "../Pages/Perfil";
 import ViewFormsSupervisor from "../Pages/ViewFormsSupervisor";
 
 const App = () => {
-  // Mueve el useContext adentro del AuthProvider
   return (
     <AuthProvider>
-      <div className="App">
-        <Router>
-          <AuthConsumer />
-        </Router>
-      </div>
+      <Router>
+        <MainApp />
+      </Router>
     </AuthProvider>
   );
 };
 
-const AuthConsumer = () => {
-  const { login, handleLogout } = useContext(AuthContext); // Ahora funciona correctamente dentro de AuthProvider
+const MainApp = () => {
+  const { handleLogout } = useContext(AuthContext);
+  const user = JSON.parse(localStorage.getItem("user")); // Obtener el usuario del localStorage
 
+  //
   return (
     <>
-      {login && <Navbar />} {/* Renderizar Navbar solo si está autenticado */}
+      {user && <Navbar />}{" "}
+      {/* Renderizar Navbar solo si hay un usuario autenticado */}
       <main>
         <Routes>
           <Route
             path="/"
-            element={login ? <Home onLogout={handleLogout} /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <Home onLogout={handleLogout} />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/gestion-autos"
-            element={login ? <AutoSearch /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <AutoSearch />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/autos/:id"
-            element={login ? <AutoDetail /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <AutoDetail />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/autos-admin/:id"
-            element={login ? <AutoDetailForAdmin /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <AutoDetailForAdmin />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/gestion-mecanicos"
-            element={login ? <MechanicManagement /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <MechanicManagement />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/agregar-auto"
-            element={login ? <AddAuto /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <AddAuto />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/escanear-qr"
-            element={login ? <QRScanner /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <QRScanner />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/agregar-mecanico"
-            element={login ? <AddMechanic /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <AddMechanic />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/gestion-conductor"
-            element={login ? <DriversManagement /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <DriversManagement />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/ver-mi-ruta"
-            element={login ? <MyRoute /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <MyRoute />
+              </ProtectedRoute>
+            }
           />
-          <Route path="/mis-gastos" element={login ? <MyBills /> : <Login />} />
+          <Route
+            path="/mis-gastos"
+            element={
+              <ProtectedRoute>
+                <MyBills />
+              </ProtectedRoute>
+            }
+          />
           <Route
             path="/agregar-gastos"
-            element={login ? <AddBills /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <AddBills />
+              </ProtectedRoute>
+            }
           />
-          <Route path="/reportes" element={login ? <Reports /> : <Login />} />
+          <Route
+            path="/reportes"
+            element={
+              <ProtectedRoute>
+                <Reports />
+              </ProtectedRoute>
+            }
+          />
           <Route
             path="/admin-gastos"
-            element={login ? <BillsManagement /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <BillsManagement />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/admin-usuarios"
-            element={login ? <UsersManagement /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <UsersManagement />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/admin-flotas"
-            element={login ? <AddFlota /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <AddFlota />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/admin-flotas/edit/:id"
-            element={login ? <EditFlota /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <EditFlota />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/admin-flotas/:flotaId/add-auto"
-            element={login ? <AddAutoFlota /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <AddAutoFlota />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/ver-gastos"
-            element={login ? <BillStates /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <BillStates />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/verificar-rutas"
-            element={login ? <RoutesVerify /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <RoutesVerify />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/rutas/:id"
-            element={login ? <RouteViewVerify /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <RouteViewVerify />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/reportes-gerencia"
-            element={login ? <ReportManagement /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <ReportManagement />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/crear-ruta"
-            element={login ? <RouteCreate /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <RouteCreate />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/autos-accidentes/:id"
-            element={login ? <AutoAccidentRegister /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <AutoAccidentRegister />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/busqueda-auto-mecanico"
-            element={login ? <MechanicAutoSearch /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <MechanicAutoSearch />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/formularios-supervisor"
-            element={login ? <ViewFormsSupervisor /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <ViewFormsSupervisor />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/visor-gastos"
-            element={login ? <BillsViewer /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <BillsViewer />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/pedidos-ayuda"
-            element={login ? <MechanicAidRequest /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <MechanicAidRequest />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/autos-accidentes-admin/:id"
-            element={login ? <AutoAccidentsForAdmin /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <AutoAccidentsForAdmin />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/forms-accidente"
-            element={login ? <FormularioAccidenteMechanic /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <FormularioAccidenteMechanic />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/visor-flota"
-            element={login ? <FlotaViewer /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <FlotaViewer />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/gestion-proveedores"
-            element={login ? <ProveedoresViewer /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <ProveedoresViewer />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/agregar-proveedor"
-            element={login ? <AddProveedor /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <AddProveedor />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/orden-de-compra"
-            element={login ? <OrdenesDeCompra /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <OrdenesDeCompra />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/pedir-acarreo"
-            element={login ? <HelpRequest /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <HelpRequest />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/verificar-formularios"
-            element={login ? <ViewFormsOperador /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <ViewFormsOperador />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/edit-proveedor/:id"
-            element={login ? <EditProveedor /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <EditProveedor />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/edit-mechanic/:id"
-            element={login ? <EditMechanic /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <EditMechanic />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/edit-car/:id"
-            element={login ? <EditCar /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <EditCar />
+              </ProtectedRoute>
+            }
           />
-          <Route path="/productos" element={login ? <Products /> : <Login />} />
-          <Route path="/add-orden" element={login ? <AddOrden /> : <Login />} />
+          <Route
+            path="/productos"
+            element={
+              <ProtectedRoute>
+                <Products />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/add-orden"
+            element={
+              <ProtectedRoute>
+                <AddOrden />
+              </ProtectedRoute>
+            }
+          />
           <Route
             path="/edit-producto/:id"
-            element={login ? <EditProducto /> : <Login />}
+            element={
+              <ProtectedRoute>
+                <EditProducto />
+              </ProtectedRoute>
+            }
           />
-          <Route path="/add-orden" element={login ? <AddOrden /> : <Login />} />
-          <Route path="/mi-perfil" element={login ? <Perfil /> : <Login />} />
-          <Route path="/recuperar-contraseña" element={<RestorePassword />} />
+          <Route
+            path="/mi-perfil"
+            element={
+              <ProtectedRoute>
+                <Perfil />
+              </ProtectedRoute>
+            }
+          />
+          <Route path="/recuperar-contraseña" element={<RestorePassword />} />{" "}
+          {/* Ruta pública */}
         </Routes>
+
+        <button onClick={handleLogout} className="btn-flotante">
+          LOGOUT
+        </button>
+        <div className="info-user">
+          <p>
+            {user ? `Usuario: ${user.email} ` : "No hay usuario autenticado"}
+          </p>
+          <p>
+            {user ? `Rol:  ${localStorage.getItem("userData")}` : "No hay rol"}
+          </p>
+        </div>
       </main>
     </>
   );
+};
+
+// Componente de ruta protegida
+const ProtectedRoute = ({ children }) => {
+  const user = JSON.parse(localStorage.getItem("user")); // Obtener el usuario del localStorage
+  return user ? children : <Login />;
 };
 
 export default App;
