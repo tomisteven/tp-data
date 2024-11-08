@@ -1,0 +1,39 @@
+/* Reset de estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.perfil-container {
+  width: 100%;
+  margin-top: 10%;
+}
+.tittle-perfil {
+  font-weight: 10px;
+  color: #ffebcd;
+  text-align: center;
+}
+
+.datos-personales-container {
+  width: 700px;
+  height: auto;
+  color: black;
+  align-items: baseline;
+  margin-top: 0;
+  padding: 0 20px 30px 5px;
+  background-color: #f4f4f4;
+}
+
+.mis-datos-h2 {
+  text-align: center;
+  color: black;
+}
+.mis-datos-label {
+  color: black;
+}
+.mis-datos-input {
+  border-radius: 0.5cap;
+  height: 25px;
+  width: 50%;
+}

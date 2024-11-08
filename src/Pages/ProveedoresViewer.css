@@ -1,0 +1,135 @@
+/* Estilos para móviles (por defecto) */
+.proveedores-viewer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-size: 16px;
+    color: white;
+    
+}
+
+.swal2-popup label{
+    color: rgb(56, 55, 55);
+    display: flex;
+    text-align: center;
+}
+
+.swal2-radio{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.proveedores-viewer h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.proveedores-viewer .add-button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #f38dc8d2;
+    font-size: 26px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.proveedores-viewer .proveedores-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.proveedores-viewer .proveedor-card {
+    background-color: #f38dc8b6;
+    padding: 15px;
+    border: 2px solid #f38dc8b6;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.proveedores-viewer .proveedor-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.proveedores-viewer .proveedor-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+.proveedores-viewer .action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.proveedores-viewer .edit-button,
+.proveedores-viewer .delete-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    background-color: #ec7fbf;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.proveedores-viewer .edit-button:hover,
+.proveedores-viewer .delete-button:hover {
+    background-color: #ed61ff;
+}
+
+/* Estilos para pantallas más grandes (PC) */
+@media (min-width: 768px) {
+    .proveedores-viewer {
+        padding: 80px;
+        font-size: 18px;
+    }
+
+    .proveedores-viewer h2 {
+        font-size: 54px;
+    }
+
+    .proveedores-viewer .add-button {
+        width: auto;
+        padding: 10px 20px;
+        font-size: 46px;
+        border-radius: 35%;
+    }
+
+    .proveedores-viewer .proveedores-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        flex-direction: row;        
+    }
+
+    .proveedores-viewer .proveedor-card {
+        width: 280px;
+        height: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .proveedores-viewer .action-buttons {
+        flex-direction: row;
+    }
+
+    .proveedores-viewer .edit-button,
+    .proveedores-viewer .delete-button {
+        width: 48%;
+    }
+}

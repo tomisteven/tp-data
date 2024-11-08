@@ -1,0 +1,214 @@
+/* AddOrden.css */
+
+.agregar-orden-container {
+    margin-top: 80px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: #f5269fb9;
+    color: #fff;
+    border-radius: 10px;
+    align-items: center;
+    display:grid;
+}
+
+.error-message {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+    padding: 8px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    font-size: 14px;
+    position: absolute;
+    left: 0;
+    transform: translateY(100%);
+    z-index: 1;
+    max-width: 200px; /* Establece un ancho máximo para el mensaje */
+    white-space: normal; /* Permite que el texto se ajuste a múltiples líneas */
+    word-wrap: break-word; /* Ajusta las palabras largas */
+}
+
+.error-message::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 10px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #f5c6cb;
+}
+
+
+
+.agregar-orden-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.agregar-orden-container h1 {
+    font-size: 30px;
+    color: blanchedalmond;
+}
+.agregar-orden-container h2{
+    margin: 10px;
+}
+.form-group {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.agregar-orden-container select{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.productos-table input{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+}
+
+.form-group label {
+    margin-right: 10px;
+    color: blanchedalmond;
+}
+
+.add-order-btn {
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #47289c;
+    color: white;
+
+}
+.add-order-btn:hover{
+    background-color: #2f286e;
+}
+.productos-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.productos-table thead {
+    background-color: #2e3a55;
+}
+
+.productos-table th{
+    padding: 10px;
+    text-align: left;
+} 
+.productos-table td {
+    padding: 10px;
+    text-align: left;
+    align-items: baseline;
+    display: flex;
+    
+}
+
+.productos-table tr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.productos-table tr {
+    background-color: #3774f88e;
+    border-bottom: 1px solid #f837be8e;
+}
+
+.productos-table tr:hover {
+    background-color: #3774f8c2;
+}
+
+.add-product-btn {
+    padding: 5px 10px;
+    margin: 10px 0;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ff64e5;
+    color: white;
+}
+
+.add-product-btn:hover {
+    background-color: #ff64e5; /* Cambia a un tono más oscuro al pasar el mouse */
+}
+
+@media only screen and (max-width: 768px) {
+   
+        .agregar-orden-container {
+            padding: 10px;
+        }
+
+        .form-group{
+            align-items: baseline;
+        }
+
+        .agregar-orden-container select{
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .productos-table  {
+            padding: 5px;
+            font-size: 0.9rem;
+            display: block; /* Para que las celdas no se superpongan */
+            width: 100%; /* Para que se ajusten al tamaño de la pantalla */
+        }
+
+        .productos-table input{
+            width: 80%;
+        }
+
+        .productos-table th{
+            height: 40px;
+        }
+
+        .productos-table td{
+            height: 60px;
+            justify-content: space-around;
+
+        }
+    
+        .add-order-btn, .add-product-btn {
+            font-size: 0.9rem;
+            padding: 8px;
+        }
+    
+        .agregar-orden-header h1 {
+            font-size: 1.3rem;
+        }
+
+    .agregar-orden-container h2{
+        margin: 10px;
+    }
+}

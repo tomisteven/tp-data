@@ -1,0 +1,170 @@
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten a múltiples filas */
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    margin-top: 65px;
+}
+
+.popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .popupContent {
+    background-color: #f38dc8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+  }
+
+  .card p {
+    margin: 10px 0;
+    word-wrap: break-word; /* Permite que el texto se ajuste al ancho */
+    white-space: normal; /* Evita que el texto se mantenga en una sola línea */
+    overflow-wrap: break-word; /* Asegura que las palabras largas se ajusten al ancho */
+  }
+
+  .popupContent button{
+    background-color: #dd4fa2;
+  }
+  
+ 
+  /* Close Button */
+  .closePopupButton {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .closePopupButton:hover {
+    background-color: #c9302c;
+  }
+
+
+  .productosTable {
+    width: 100%;
+    background-color: rgb(21, 21, 90);
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  .productosTable th, .productosTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .productosTable th {
+    background-color: rgb(16, 16, 68);
+    font-weight: bold;
+  }
+  
+  .productosTable tr:nth-child(even) {
+    background-color: rgb(21, 21, 90);
+  }
+  
+  .productosTable tr:hover {
+    background-color: #111546;
+  }
+  
+.title {
+    width: 100%;
+    font-size: 3rem;
+    font-weight: bold;
+    color: blanchedalmond;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card h3{
+    font-size: 1.4rem;
+}
+
+.titlo{
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    flex: 1 1 300px; /* Toma 300px o más si hay espacio */
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f38dc8be;
+    color: wheat;
+    max-width: 270px; /* Define un ancho máximo para mantener la consistencia */
+    justify-content: space-between;
+
+}
+.buttonContainer {
+    margin-top:auto; /* Empuja los botones hacia el final de la card */
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+  }
+
+.card p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.card strong {
+    color:wheat;
+}
+
+/* Estilos para los botones */
+.buttonContainer {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre los botones */
+    margin-top: 10px;
+}
+
+.buttonContainer button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.buttonContainer button:disabled {
+    background-color: #cccccc; /* Color para el botón deshabilitado */
+    cursor: not-allowed;
+}
+
+.buttonContainer button:not(:disabled) {
+    background-color: #eb1ead; /* Color para botón "Confirmar" */
+}
+
+.buttonContainer button:not(:disabled):last-child {
+    background-color: #394181; /* Color para botón "Denegar" */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        max-width: 100%; /* Las tarjetas ocupan todo el ancho en pantallas pequeñas */
+    }
+}

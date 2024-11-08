@@ -1,0 +1,69 @@
+.reportes-gerencia-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+  padding-top: 60px; /* Espacio para la navbar */
+  min-width: 100%; /* Asegúrate de que ocupe todo el ancho en mobile */
+  color: blanchedalmond;
+}
+
+.selection {
+  width: 100%;
+  max-width: 400px; /* Cambia el ancho máximo para pantallas pequeñas */
+  margin-bottom: 20px;
+}
+
+.filter-fields {
+  width: 100%;
+  max-width: 400px; /* Asegúrate de que no sea demasiado ancho en mobile */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espaciado entre los elementos */
+}
+
+.report-card {
+  display: flex;
+  flex-direction: column; /* Cambia a columna para que se vea mejor en mobile */
+  background-color: #e052a5 ;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 5px 0; /* Espacio entre las tarjetas */
+  width: 100%; /* Asegúrate de que ocupe todo el ancho en mobile */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Agrega una sombra para un efecto visual */
+}
+
+.btn-download {
+  font-size: 20px; /* Ajusta el tamaño del icono */
+  align-self: flex-end; /* Alinea el botón a la derecha */
+}
+
+@media (min-width: 768px) {
+  .reportes-gerencia-container {
+    padding: 40px; /* Aumenta el padding para mayor espacio en PC */
+    max-width: 1200px; /* Establece un ancho máximo para centrar el contenido */
+  }
+
+  .selection {
+    width: 100%;
+    max-width: 400px; /* Reduce el ancho máximo del selector */
+    margin: 0 auto; /* Centra el selector */
+  }
+
+  .report-card {
+    flex-direction: row; /* Mantiene los elementos en fila */
+    justify-content: space-between; /* Espaciado entre elementos */
+    width: 100%; /* Usa todo el ancho disponible */
+    max-width: 600px; /* Ancho máximo de las tarjetas */
+    margin: 10px auto; /* Centrarlas con margen automático */
+    padding: 10px; /* Aumenta el padding */
+    background-color: #e052a5; /* Color de fondo */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega sombra para profundidad */
+  }
+
+  .btn-download {
+    font-size: 28px; /* Aumenta el tamaño del botón en pantallas grandes */
+  }
+}

@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* Estilos exclusivos para .my-bills-container */
+.my-bills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.my-bills-container h1 {
+  padding-top: 10%; /* Ajuste menor para pantallas pequeñas */
+  color: white;
+  font-size: 24px; /* Tamaño adecuado para móviles */
+}
+
+.my-bills-container button {
+  width: 100%;
+  max-width: 300px; /* Limitar el tamaño del botón */
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #f38dc8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.my-bills-container #lista {
+  width: 100%;
+  max-width: 500px; /* Ajuste del ancho del formulario */
+  margin: 0 auto;
+  padding: 15px;
+  border: 1px solid #444444;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente línea si es necesario */
+  justify-content: space-between; /* Espacio entre los elementos */
+}
+
+.my-bills-container .lista {
+  color: white;
+  font-size: 16px;
+}
+
+.my-bills-container .gasto-item {
+  border: 1px solid #241b1b;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #1b1313;
+  color: white;
+  font-size: 14px;
+  flex: 1 1 45%; /* Los elementos ocupan el 45% del ancho del contenedor */
+  box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño total */
+}
+
+/* Estilos para pantallas más grandes (tablets y PC) */
+@media (min-width: 768px) {
+  .my-bills-container h1 {
+    font-size: 32px; /* Tamaño más grande para pantallas grandes */
+    padding-top: 5%;
+    margin-top: 40px;
+  }
+
+  .my-bills-container button {
+    max-width: 400px; /* Ampliar el tamaño del botón en pantallas grandes */
+    font-size: 45px;
+    width: 80px;
+    border-radius: 100%;
+    background-color: #f38dc8;
+  }
+
+  .my-bills-container #lista {
+    padding: 30px;
+    max-width: 2000px ;
+    flex-direction: row;
+  }
+
+  .my-bills-container .gasto-item {
+    font-size: 16px; /* Aumentar el tamaño de texto en pantallas grandes */
+  }
+}

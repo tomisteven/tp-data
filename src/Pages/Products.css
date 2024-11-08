@@ -1,0 +1,237 @@
+/* Reset de estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo del fondo */
+.productos-container {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("Images/Mecanicos-certificados-en-nuestras-marcas.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Roboto", sans-serif;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 70px auto;
+  min-height: 106vh;
+  height: auto;
+  color: white;
+}
+
+/* .productos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 70px auto;
+  min-height: 106vh;
+  height: auto;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+} */
+
+.product-table {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.table-productos {
+  border-collapse: collapse;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 0.5cm;
+  width: 100%;
+  font-size: large;
+}
+
+.table-productos th,
+.table-productos td {
+  height: 100%;
+  padding: 8px;
+  text-align: left;
+  width: auto;
+  font-size: larger;
+  border-bottom: 1px solid;
+}
+
+#opcions-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite a los elementos ajustar su posición */
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+#abrir-add-product:disabled {
+  cursor: not-allowed;
+  background-color: grey;
+}
+
+.button-modificar:disabled {
+  cursor: not-allowed;
+  background-color: grey;
+}
+
+.button-eliminar:disabled {
+  cursor: not-allowed;
+  background-color: grey;
+}
+
+#abrir-add-product {
+  align-items: end;
+  border-radius: 0%;
+  width: 100%;
+  padding: 10px 20px; /* Reducción del padding */
+  margin-bottom: 10px; /* Espacio entre elementos */
+}
+
+.search-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px; /* Espacio entre elementos */
+}
+
+#search-producto {
+  padding-left: 30px;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gray;
+}
+
+#select-categoria {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px; /* Espacio entre elementos */
+}
+
+.productos-container h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-top: 1px;
+}
+
+.button {
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-modificar {
+  background-color: #0fff4371;
+  color: white;
+}
+
+.button-eliminar {
+  background-color: #f44336;
+  color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .productos-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .product-table {
+    width: 100%;
+  }
+
+  .table-productos {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .productos-container {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .product-table {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .table-productos {
+    width: 100%;
+  }
+
+  .table-productos th,
+  .table-productos td {
+    width: 100%;
+  }
+
+  #opcions-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .productos-container {
+    margin-top: 60px;
+    padding-top: 10px;
+  }
+
+  #opcions-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-table {
+    max-width: 290px;
+    width: 100%;
+  }
+
+  .table-productos {
+    padding: 1px;
+    font-size: smaller;
+  }
+
+  th,
+  td {
+    width: 100%;
+    font-size: smaller;
+  }
+
+  #abrir-add-product,
+  #select-categoria,
+  .search-container {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

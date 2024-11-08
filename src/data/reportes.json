@@ -1,0 +1,58 @@
+[
+  {
+    "id": 235,
+    "fecha": "1-10-2024",
+    "tipo": "mensual"
+  },
+  {
+    "id": 982,
+    "fecha": "23-09-2024",
+    "tipo": "semanal"
+  },
+  {
+    "id": 173,
+    "fecha": "2-08-2024",
+    "tipo": "mensual"
+  },
+  {
+    "id": 749,
+    "fecha": "13-09-2024",
+    "tipo": "semanal"
+  },
+  {
+    "id": 571,
+    "fecha": "23-07-2024",
+    "vehiculo": "Auto",
+    "disponibilidad": "Reservado"
+  },
+  {
+    "id": 623,
+    "fecha": "03-08-2024",
+    "vehiculo": "Moto",
+    "disponibilidad": "No reservado"
+  },
+  {
+    "id": 884,
+    "fecha": "09-08-2024",
+    "vehiculo": "Moto",
+    "disponibilidad": "Reservado"
+  },
+  {
+    "id": 549,
+    "fecha": "10-09-2024",
+    "vehiculo": "Auto",
+    "disponibilidad": "Reservado"
+  },
+  {
+    "id": 562,
+    "fecha": "09-07-2024",
+    "vehiculo": "Moto",
+    "disponibilidad": "No reservado"
+  },
+  {
+    "id": 875,
+    "fecha": "10-01-2024",
+    "vehiculo": "Auto",
+    "disponibilidad": "Reservado"
+  }
+]

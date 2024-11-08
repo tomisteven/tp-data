@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "nombre": "Laura",
+      "apellido": "Martínez",
+      "telefono": "+5647382910",
+      "correo_electronico": "laura.martinez@example.com"
+    },
+    {
+      "id": 2,
+      "nombre": "Luis",
+      "apellido": "Ramírez",
+      "telefono": "+6677889900",
+      "correo_electronico": "luis.ramirez@example.com"
+    },
+    {
+      "id": 3,
+      "nombre": "Ana",
+      "apellido": "García",
+      "telefono": "+4455667788",
+      "correo_electronico": "ana.garcia@example.com"
+    }
+  ]
+  

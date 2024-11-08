@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "descripcion": "Peaje",
+    "monto": 1500.75,
+    "fecha": "2024-09-15",
+    "estado": "Pagado"
+  },
+  {
+    "id": 2,
+    "descripcion": "Nafta",
+    "monto": 3000.0,
+    "fecha": "2024-09-10",
+    "estado": "Pendiente"
+  },
+  {
+    "id": 3,
+    "descripcion": "Peaje",
+    "monto": 850.5,
+    "fecha": "2024-09-18",
+    "estado": "Pagado"
+  },
+  {
+    "id": 4,
+    "descripcion": "Cambio de aceite",
+    "monto": 1200.0,
+    "fecha": "2024-09-01",
+    "estado": "Pendiente"
+  }
+]

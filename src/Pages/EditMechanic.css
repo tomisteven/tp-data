@@ -1,0 +1,44 @@
+.edit-mechanic {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f079;
+  border-radius: 8px;
+  margin-top: 70px;
+}
+
+.edit-mechanic input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.btn-submit-edit-mec {
+  padding: 10px 20px;
+  background-color: #e946a5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-submit-edit-mec:hover {
+  background-color: #f375aa;
+}
+
+.btn-cancelar-edit-mec {
+  padding: 10px 20px;
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-cancelar-edit-mec:hover {
+  background-color: darkgrey;
+}

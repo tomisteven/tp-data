@@ -1,0 +1,59 @@
+.edit-car {
+  max-width: 500px; /* Ajusta el ancho máximo del formulario */
+  margin: 68px; /* Centra el formulario horizontalmente */
+  padding: 10px;
+  border: 1px solid #444444;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.edit-car h2 {
+  font-size: xx-large;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.input-edit-car {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.btn-edit-auto {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #f565dd;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-edit-auto:hover {
+  background-color: #ffa9ea;
+}
+
+.btn-back-edit-auto {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: grey;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn-back-edit-auto:hover {
+  background-color: rgb(90, 89, 89);
+}

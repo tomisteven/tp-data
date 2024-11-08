@@ -1,0 +1,129 @@
+/* Reset de estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo de fondo exclusivo para AutoSearch */
+  .auto-search {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("Images/Mecanicos-certificados-en-nuestras-marcas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  /* Título */
+  .auto-search__title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  /* Contenedor de búsqueda y botones */
+  .auto-search__search-add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Input de búsqueda */
+  .auto-search__input {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Botones de agregar auto y escanear QR */
+  .auto-search__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .auto-search__add-auto,
+  .auto-search__scan-qr {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .auto-search__add-auto {
+    background-color: #f38dc8c4;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .auto-search__add-auto:hover {
+    background-color: #ed61ffc9;
+  }
+  
+  .auto-search__scan-qr {
+    background-color: #f38dc8c4;
+    color: white;
+  }
+  
+  .auto-search__scan-qr:hover {
+    background-color: #ed61ffb2;
+  }
+  
+  /* Lista de tarjetas de autos para móviles (por defecto en columna) */
+  .auto-search__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 800px;
+    
+  }
+  
+  /* Media query para pantallas más grandes (PC) */
+  @media (min-width: 768px) {
+    .auto-search__list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Distribuir las tarjetas en filas */
+      gap: 20px;
+    }
+  
+    .auto-search__title {
+      font-size: 2rem;
+    }
+  
+    .auto-search__input {
+      max-width: 400px;
+      font-size: 1.1rem;
+    }
+  
+    .auto-search__buttons {
+      gap: 20px;
+      
+    }
+  
+    .auto-search__add-auto,
+    .auto-search__scan-qr {
+      padding: 12px 30px;
+      font-size: 1.1rem;
+      background-color: #f38dc8c4;
+      font-size: 40px;
+    }
+  }
+  

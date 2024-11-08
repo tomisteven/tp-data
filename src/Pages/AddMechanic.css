@@ -1,0 +1,90 @@
+/* Estilos para móviles (por defecto) */
+.add-mecanico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 0.2cm;
+  background-color: #0e0d0d9d;
+  min-height: 100vh;
+  margin-top: 55px;
+}
+
+.add-mecanico h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: blanchedalmond;
+}
+
+.add-mecanico input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.add-mecanico input::placeholder {
+  color: #999;
+}
+
+.btn-agregar {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  background-color: #f38dc8;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-agregar:hover {
+  background-color: #ed61ff;
+}
+
+.btn-cancelar-add-mec {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  background-color: grey;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cancelar-add-mec:hover {
+  background-color: darkgrey;
+}
+
+/* Estilos para pantallas más grandes (tablets y PC) */
+@media (min-width: 768px) {
+  .add-mecanico {
+    padding: 40px;
+    margin-top: 65px;
+  }
+
+  .add-mecanico h2 {
+    font-size: 42px;
+    color: blanchedalmond;
+  }
+
+  .add-mecanico input {
+    padding: 14px;
+    font-size: 18px;
+  }
+
+  .add-mecanico button {
+    padding: 14px;
+    font-size: 20px;
+  }
+}

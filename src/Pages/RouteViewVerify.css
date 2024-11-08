@@ -1,0 +1,79 @@
+/* Estilos generales para RouteViewVerify */
+#route-detail-container {
+  display: flex;
+  flex-direction: column; /* Mobile-first: en pantallas pequeñas, los elementos estarán en columna */
+  align-items: center;
+  padding: 20px;
+  margin-top: 55px;
+}
+
+#detalles-container {
+  padding: 10px;
+  margin-top: 20px;
+  border: 2px solid #444444;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.692);
+  text-align: center; /* Centra el texto en pantallas pequeñas */
+  width: 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
+  max-width: 400px; /* Limita el ancho máximo */
+}
+
+#map-container {
+  width: 100%;
+  max-width: 600px; /* Limita el ancho del contenedor del mapa */
+  margin-bottom: 20px;
+}
+
+#map-container img {
+  width: 100%; /* Asegura que la imagen del mapa ocupe el 100% del contenedor */
+  border-radius: 8px;
+}
+
+.button-estado {
+  width: 80%; /* Botones más grandes en móviles */
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: none;
+  background-color: #f38dc8;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-estado:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+#volver-rutas {
+  color: #f38dc8;
+  cursor: pointer;
+  margin-top: 20px; 
+  margin-right: 12px;
+}
+
+/* Estilos responsive para pantallas más grandes */
+@media only screen and (min-width: 768px) {
+  #route-detail-container {
+    flex-direction: row; /* En pantallas más grandes, los elementos estarán en fila */
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  #detalles-container {
+    margin-left: 40px; /* Añade espacio entre el mapa y los detalles en pantallas grandes */
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .button-estado {
+    width: 70px; /* Los botones recuperan su tamaño normal en pantallas grandes */
+    margin-left: 78px;
+  }
+
+  #volver-rutas {
+    margin-left: 166px;
+  }
+}

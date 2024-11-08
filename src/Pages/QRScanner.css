@@ -1,0 +1,45 @@
+/* Estilos para QRScanner */
+.qr-scanner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .qr-video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .qr-close-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ea4dff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .qr-close-button:hover {
+    background-color: #f76af0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .qr-video {
+      max-width: 100%;
+    }
+  
+    .qr-close-button {
+      width: 80%;
+      font-size: 1.2rem;
+    }
+  }
+  

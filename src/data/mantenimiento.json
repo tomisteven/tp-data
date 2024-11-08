@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "auto_id": 1,
+      "mecanico_id": 2,
+      "fecha": "2024-08-01",
+      "tipo_de_mantenimiento": "Revisión eléctrica",
+      "descripcion": "Cambio de batería y revisión del sistema eléctrico."
+    },
+    {
+      "id": 2,
+      "auto_id": 2,
+      "mecanico_id": 1,
+      "fecha": "2024-07-15",
+      "tipo_de_mantenimiento": "Cambio de aceite",
+      "descripcion": "Cambio de aceite y filtro de aceite."
+    },
+    {
+      "id": 3,
+      "auto_id": 3,
+      "mecanico_id": 3,
+      "fecha": "2024-06-20",
+      "tipo_de_mantenimiento": "Revisión de frenos",
+      "descripcion": "Reemplazo de pastillas de freno y ajuste del sistema de frenos."
+    }
+  ]
+  

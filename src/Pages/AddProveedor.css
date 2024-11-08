@@ -1,0 +1,82 @@
+/* AddProveedor.css */
+
+.add-proveedor-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 85px auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.add-proveedor-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.add-proveedor-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  border-color: #888;
+  outline: none;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 38px;
+  color: white;
+  background-color: #ff5dff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #fd96fd;
+}
+
+.btn-cancelar {
+  width: 100%;
+  padding: 12px;
+  font-size: 30px;
+  color: white;
+  background-color: grey;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cancelar:hover {
+  background-color: darkgrey;
+}

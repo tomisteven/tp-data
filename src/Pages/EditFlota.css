@@ -1,0 +1,54 @@
+.edit-flota-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .edit-flota-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .edit-flota-container form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  .edit-flota-container form div {
+    margin-bottom: 15px;
+  }
+  
+  .edit-flota-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .edit-flota-container input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .edit-flota-container button {
+    padding: 10px;
+    background-color: #f871e2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-flota-container button:hover {
+    background-color: #fa2ad7;
+  }
+  
+  .error-banner {
+    color: red;
+    font-size: 14px;
+  }
+  

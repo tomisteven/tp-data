@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+.add-bills-container h2 {
+  color: white;
+}
+
+.add-bills-container {
+  width: 100%; /* Abarca el 100% del ancho en móviles */
+  max-width: 500px; /* Limita el ancho en pantallas grandes */
+  height: auto;
+  margin-top: 85px;
+  padding: 20px;
+  border: 1px solid #444444;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.add-bills-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+.add-bills-container button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #f38dc8;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 3px;
+}
+
+.cancelar {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: grey;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 3px;
+}
+
+/* Estilos para pantallas más grandes (tablets y PC) */
+@media (min-width: 768px) {
+  .add-bills-container {
+    max-width: 600px; /* Aumenta el tamaño máximo del formulario en pantallas más grandes */
+    padding: 30px; /* Ajuste de padding en pantallas grandes */
+  }
+
+  .add-bills-container input {
+    font-size: 18px; /* Tamaño de texto más grande */
+  }
+
+  .add-bills-container button,
+  #cancelar {
+    font-size: 38px; /* Botones más grandes en pantallas grandes */
+    padding: 15px; /* Mayor padding para los botones */
+  }
+}

@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* Estilo general para el cuerpo */
+#body-gastos {
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+  align-items: center; /* Centra el contenido horizontalmente */
+  padding: 20px;
+  color: blanchedalmond;
+}
+
+/* Contenedor principal de gastos */
+.bills-states-container {
+  max-width: 1000px; /* Ancho máximo del contenedor */
+  width: 100%; /* Ocupa el 100% del ancho disponible */
+}
+
+/* Estilo para el título */
+.bills-states-container h1 {
+  display: flex;
+  padding-top: 20%;
+  color: white;
+  justify-content: center;
+}
+
+/* Lista de gastos */
+.bills-list {
+  display: flex; /* Usa flexbox para alinear los items */
+  flex-wrap: wrap; /* Permite que los items se envuelvan en filas */
+  justify-content: center; /* Centra los items horizontalmente */
+  margin: 20px auto; /* Centra horizontalmente */
+  padding: 20px;
+  width: 100%; /* Asegura que la lista ocupe todo el ancho disponible */
+}
+
+/* Estilo para cada tarjeta de gasto */
+.gasto-item {
+  border: 1px solid #f38dc8;
+  padding: 10px;
+  margin: 10px; /* Espacio entre los items */
+  border-radius: 5px;
+  background-color: #f38dc8;
+  color: white; /* Texto blanco para contraste */
+  flex: 1 1 calc(30% - 20px); /* Ajusta el tamaño para 3 tarjetas en fila en pantallas grandes */
+  box-sizing: border-box; /* Asegura que el padding y el border no afecten el tamaño total */
+}
+
+/* Estilo para el selector de ordenación */
+#selectors {
+  max-width: 300px; /* Ancho máximo para el selector */
+  margin: 20px auto; /* Centra horizontalmente */
+}
+
+/* Estilo para la lista de gastos */
+.lista {
+  color: white;
+}
+
+/* Estilo adicional para los selectores */
+label {
+  color: white; /* Texto blanco para etiquetas */
+  margin-right: 10px; /* Espacio entre la etiqueta y el selector */
+}
+
+select {
+  margin-bottom: 20px; /* Espacio inferior en selectores */
+  padding: 5px; /* Espaciado interno */
+}

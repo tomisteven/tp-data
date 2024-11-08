@@ -1,0 +1,76 @@
+/* Estilos para móviles (por defecto) */
+.autoDetail {
+  padding: 20px;
+  margin: 12px;
+  margin-top: 80px;
+  text-align: center;
+  background-color: #1a1a1a70; /* Cambia a un color sólido, por ejemplo, #1a1a1a para un gris oscuro */
+  max-width: 100%;
+  color: rgb(255, 255, 255);
+}
+
+.autoDetail h2{
+  margin: 25px;
+}
+
+.maintenanceTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  
+}
+
+.maintenanceTable th,
+.maintenanceTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  font-size: 10px; /* Tamaño de texto adecuado para móviles */
+}
+
+.autoDetail input {
+  padding: 10px;
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+}
+
+.autoDetail button {
+  padding: 12px;
+  background-color: #f38dc8c4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 50%; 
+}
+
+.backLink {
+  display: inline-block;
+  margin-top: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.backLink:hover {
+  color: #d10000;
+}
+
+/* Estilos para pantallas más grandes (PC) */
+@media (min-width: 768px) {
+  .autoDetail {
+    padding: 60px;
+    margin-top: 80px;
+    max-width: 80%; /* Ajuste del ancho en pantallas grandes */
+  }
+
+  .maintenanceTable th,
+  .maintenanceTable td {
+    padding: 10px;
+    font-size: 16px; /* Aumentar tamaño del texto en pantallas grandes */
+  }
+
+  .autoDetail button {
+    width: auto; /* Devolver el ancho automático en pantallas grandes */
+    padding: 10px 20px;
+  }
+}

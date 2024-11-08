@@ -1,0 +1,63 @@
+.Home.body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Contenedor principal */
+.conenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Alinea los elementos en el centro */
+  align-items: center; /* Centra los elementos horizontalmente */
+  height: calc(100vh - 100px); /* Ajuste dinámico de la altura */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos para el texto */
+.textos {
+  color: white;
+}
+
+.textos h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.textos p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Estilo del botón */
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #f38dc8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ed61ff;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .textos h2 {
+      font-size: 2rem;
+  }
+
+  .textos p {
+      font-size: 1rem;
+  }
+
+  button {
+      width: 100%;
+      font-size: 1rem;
+  }
+}

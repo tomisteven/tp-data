@@ -1,0 +1,95 @@
+[
+    {
+        "id": 1,
+        "proveedor": "Frenos Tomi",
+        "fecha": "2024/10/19",
+        "estado": "Creada",
+        "total": 150,
+        "productos": [
+            {
+                "nombre": "Liquido para Frenos",
+                "cantidad": 3
+            },
+            {
+                "nombre": "Frenos modelo t0m1",
+                "cantidad": 4
+            },
+            {
+                "nombre": "Pastillas de freno",
+                "cantidad": 2
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "proveedor": "Chapa y Pintura Roman",
+        "fecha": "2024/10/19",
+        "estado": "Creada",
+        "total": 120,
+        "productos": [
+            {
+                "nombre": "Laca Azul 912ml",
+                "cantidad": 2
+            },
+            {
+                "nombre": "Pintura Dorada en aerosol",
+                "cantidad": 4
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "proveedor": "Tuercas Cata",
+        "fecha": "2024-10-19",
+        "estado": "Aprobada",
+        "total": 300,
+        "productos": [
+            {
+                "nombre": "Tuerca con glitter",
+                "cantidad": 500
+            },
+            {
+                "nombre": "Tuerca bonita",
+                "cantidad": 100
+            },
+            {
+                "nombre": "Tuerca Rosa",
+                "cantidad": 300
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "proveedor": "Autopartes Joaquin",
+        "fecha": "2024-10-17",
+        "estado": "Completada",
+        "total": 400,
+        "productos": [
+            {
+                "nombre": "Kit de embrague",
+                "cantidad": 1
+            },
+            {
+                "nombre": "Limpia Parabrisas",
+                "cantidad": 1
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "proveedor": "Electronica Santi",
+        "fecha": "2024-10-16",
+        "estado": "Rechazada",
+        "total": 200,
+        "productos": [
+            {
+                "nombre": "Fusibles",
+                "cantidad": 2
+            },
+            {
+                "nombre": "Bateria",
+                "cantidad": 1
+            }
+        ]
+    }
+]

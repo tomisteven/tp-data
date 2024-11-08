@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "nombre": "Juan",
+      "apellido": "Pérez",
+      "dni": "12345678",
+      "numeroTelefono": "555-1234",
+      "habilitado": false
+    },
+    {
+      "id": 2,
+      "nombre": "Ana",
+      "apellido": "Gómez",
+      "dni": "87654321",
+      "numeroTelefono": "555-5678",
+      "habilitado": false
+    },
+    {
+      "id": 3,
+      "nombre": "Carlos",
+      "apellido": "López",
+      "dni": "23456789",
+      "mail": "carloslopez@hotmail.com",
+      "rol": "Operador",
+      "habilitado": true
+    },
+    {
+      "id": 4,
+      "nombre": "Lucía",
+      "apellido": "Martínez",
+      "dni": "34567890",
+      "mail": "luciamartinez@hotmail.com",
+        "rol": "Operador",
+      "habilitado": true
+    },
+    {
+      "id": 5,
+      "nombre": "Pedro",
+      "apellido": "Ramírez",
+      "dni": "45678901",
+      "mail": "pedroramirez@hotmail.com",
+      "rol": "Operador",
+      "habilitado": true
+    }
+  ]

@@ -1,0 +1,112 @@
+/* Contenedor principal */
+.expenses-viewer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-top: 60px; /* Espacio para la navbar */
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white; /* Ajusta el color según el fondo */
+}
+
+/* Estilos para los filtros */
+.filters {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filters input[type="text"],
+.filters select {
+  padding: 10px;
+  width: 48%; /* Espacio para los márgenes */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Lista de gastos */
+.expenses-list {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se muestren en varias filas */
+  gap: 15px; /* Espacio entre las tarjetas */
+  justify-content: center; /* Centrar las tarjetas en la lista */
+  width: 100%;
+}
+
+/* Estilos de las tarjetas de gastos */
+.expense-card {
+  background-color: #fa75c2cb; /* Un rojo más suave y opaco */
+  padding: 15px; /* Reduce el padding para mejor proporción */
+  border: 1px solid #fa75c2cb;
+  border-radius: 10px;
+  width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+  max-width: 280px; /* Ancho máximo para que no se agrande demasiado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+  font-size: 0.9rem; /* Reduce ligeramente el tamaño del texto */
+}
+
+.expense-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.expense-card p {
+  margin: 8px 0;
+}
+
+/* Botones dentro de las tarjetas */
+.expense-card button {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f38dc8; /* Color de fondo del botón */
+  color: white;
+  margin-top: 10px;
+  width: 100%; /* Botón ocupa todo el ancho de la tarjeta */
+}
+
+.expense-card button:hover {
+  background-color: #ed61ff; /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilos responsive */
+@media only screen and (max-width: 768px) {
+  .expense-card {
+      width: 100%; /* Tarjetas ocupan el 100% en móviles */
+  }
+
+  .filters {
+      flex-direction: column; /* Cambia a columna en móviles */
+      align-items: stretch;
+  }
+
+  .filters input[type="text"],
+  .filters select {
+      width: 100%; /* Campos de filtro ocupan el 100% en móviles */
+      margin-bottom: 10px; /* Espacio entre filtros */
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .expense-card {
+      width: calc(50% - 15px); /* Dos tarjetas en pantallas medianas */
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .expense-card {
+      width: calc(33.33% - 15px); /* Tres tarjetas en pantallas grandes */
+  }
+}

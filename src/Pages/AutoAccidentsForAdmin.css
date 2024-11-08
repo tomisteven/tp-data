@@ -1,0 +1,118 @@
+/* Reset de estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo del contenedor principal */
+  .auto-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px; /* Reducido para pantallas pequeñas */
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    min-height: calc(100vh - 80px); /* Espacio para la barra de navegación */
+    margin: 40px;
+    font-size: 11px;
+    margin-top: 55px;
+  }
+  
+  /* Títulos */
+  .auto-detail h2 {
+    margin-bottom: 8px; /* Reducido */
+    font-size: 1.6rem; /* Reducido para mobile */
+  }
+  
+  .auto-detail h3 {
+    margin: 10px 0; /* Reducido */
+    font-size: 1.4rem; /* Reducido para mobile */
+  }
+  
+  /* Estilo de la tabla */
+  .maintenance-table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    color: white;
+    overflow-x: auto; /* Permite el desplazamiento horizontal en mobile */
+  }
+  
+  .maintenance-table th,
+  .maintenance-table td {
+    border: 1px solid #ddd;
+    padding: 8px; /* Reducido */
+    text-align: left;
+  }
+  
+  .maintenance-table th {
+    background-color: #444;
+    color: #fff;
+  }
+  
+  /* Estilos para los inputs */
+  .auto-detail input {
+    width: 100%;
+    padding: 8px; /* Reducido */
+    margin: 8px 0; /* Reducido */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem; /* Mantener tamaño legible */
+  }
+  
+  /* Estilo del botón */
+  .auto-detail button {
+    padding: 10px 15px; /* Reducido */
+    background-color: #f38dc8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem; /* Mantener tamaño legible */
+    transition: background-color 0.3s ease;
+  }
+  
+  .auto-detail button:hover {
+    background-color: #ed61ff;
+  }
+  
+  /* Estilo del enlace de retroceso */
+  .back-link {
+    margin-top: 15px; /* Reducido */
+    color: #fff;
+    text-decoration: underline;
+    font-size: 1rem; /* Mantener tamaño legible */
+  }
+  
+  /* Estilos para pantallas más grandes (PC) */
+  @media (min-width: 768px) {
+    .auto-detail {
+      padding: 40px;
+      margin-top: 65px;
+    }
+  
+    .auto-detail h2 {
+      font-size: 2.5rem;
+    }
+  
+    .auto-detail h3 {
+      font-size: 2rem;
+    }
+  
+    .auto-detail input {
+      font-size: 1.2rem;
+    }
+  
+    .auto-detail button {
+      font-size: 1.2rem;
+      background-color: #f38dc8;
+    }
+  
+    .maintenance-table th,
+    .maintenance-table td {
+      padding: 15px;
+    }
+  }
+  

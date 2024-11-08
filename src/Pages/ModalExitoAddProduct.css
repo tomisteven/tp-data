@@ -1,0 +1,78 @@
+.modal-exito {
+  width: 50%;
+  height: 70%;
+  max-width: 1200px;
+  background-color: white;
+  inset: 0;
+  padding: 10px;
+  margin: 10%;
+  margin-left: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  border-radius: 5%;
+  border-style: solid;
+  border-color: green;
+  z-index: inherit;
+}
+
+#tittle-prod-exitoso {
+  color: black;
+  font-size: x-large;
+}
+
+#icon-check {
+  color: green;
+  font-size: 115px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .modal-exito {
+    width: 300px;
+    height: 280px;
+    margin: 10% auto; /* Centrar el margen horizontalmente */
+  }
+
+  #tittle-prod-exitoso {
+    font-size: x-large; /* Reducir tamaño de fuente */
+  }
+
+  #icon-check {
+    font-size: 100px; /* Reducir tamaño de icono */
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-exito {
+    width: 400px;
+    height: 280px;
+    margin: 10% auto; /* Centrar el margen horizontalmente */
+  }
+
+  #tittle-prod-exitoso {
+    font-size: x-large; /* Reducir tamaño de fuente */
+  }
+
+  #icon-check {
+    font-size: 100px; /* Reducir tamaño de icono */
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-exito {
+    width: 250px;
+    height: 215px;
+    margin: 20% auto; /* Centrar el margen horizontalmente */
+  }
+
+  #tittle-prod-exitoso {
+    font-size: large; /* Reducir tamaño de fuente aún más */
+  }
+
+  #icon-check {
+    padding-left: 15px;
+    font-size: 60px; /* Reducir tamaño de icono */
+  }
+}

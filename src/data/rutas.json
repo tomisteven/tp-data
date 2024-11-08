@@ -1,0 +1,34 @@
+[
+  {
+    "id": 13214,
+    "desde": "Paqueteria norte",
+    "hasta": "Baroni 1596, Los Polvorines",
+    "fecha": "24-09-2024",
+    "estado": "Pendiente de verificación",
+    "rutaDada": "/src/Pages/Images/ejemplo-map.jpg"
+  },
+  {
+    "id": 24123,
+    "desde": "Paqueteria norte",
+    "hasta": "Dante 5601, Caseros",
+    "fecha": "9-09-2024",
+    "estado": "Aprobado",
+    "rutaDada": "/src/Pages/Images/ejemplo-map.jpg"
+  },
+  {
+    "id": 34681,
+    "desde": "Paqueteria sur",
+    "hasta": "Chile 1598, Don Torcuato",
+    "fecha": "11-09-2024",
+    "estado": "Pendiente de verificación",
+    "rutaDada": "/src/Pages/Images/ejemplo-map.jpg"
+  },
+  {
+    "id": 35178,
+    "desde": "Paqueteria sur",
+    "hasta": "Martín Pescador 1399, Tigre",
+    "fecha": "11-08-2024",
+    "estado": "Rechazado",
+    "rutaDada": "/src/Pages/Images/ejemplo-map.jpg"
+  }
+]

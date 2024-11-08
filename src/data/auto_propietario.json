@@ -1,0 +1,21 @@
+[
+    {
+      "auto_id": 1,
+      "propietario_id": 1,
+      "fecha_inicio": "2023-01-01",
+      "fecha_fin": null
+    },
+    {
+      "auto_id": 2,
+      "propietario_id": 2,
+      "fecha_inicio": "2022-05-10",
+      "fecha_fin": null
+    },
+    {
+      "auto_id": 3,
+      "propietario_id": 3,
+      "fecha_inicio": "2021-03-15",
+      "fecha_fin": "2023-07-01"
+    }
+  ]
+  

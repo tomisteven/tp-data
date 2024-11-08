@@ -1,0 +1,26 @@
+{"flotas": [
+    {
+        "id": 1,
+        "nombre": "Primera Flota",
+        "estado": "habilitado",
+        "en_uso": "no"
+      },
+      {
+        "id": 2,
+        "nombre": "Flota Autos",
+        "estado": "deshabilitado",
+        "en_uso": "no"
+      },
+      {
+        "id": 3,
+        "nombre": "Flota 2015",
+        "estado": "habilitado",
+        "en_uso": "si"
+      },
+      {
+        "id": 4,
+        "nombre": "Flota Camionetas",
+        "estado": "habilitado",
+        "en_uso": "si"
+      }
+]}

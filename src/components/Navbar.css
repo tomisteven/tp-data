@@ -1,0 +1,96 @@
+/* Estilo de la barra de navegación */
+.navbar {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center;
+  background-color: #2566b1a9;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Lista de navegación */
+.navbar-list {
+  display: flex;
+  gap: 20px; /* Espaciado entre los elementos */
+  list-style: none;
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  align-items: center; /* Alineación vertical de los elementos */
+  justify-content: center; /* Centra los elementos en la barra */
+  
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  display: flex; /* Asegura que ícono y texto estén alineados */
+  align-items: center; /* Alineación vertical centrada */
+  justify-content: center; /* Centra el contenido dentro del enlace */
+}
+
+.navbar-link svg {
+  font-size: 1.5rem; /* Tamaño del icono */
+  margin-right: 8px; /* Espaciado entre el ícono y el texto */
+}
+
+.navbar-link:hover {
+  background-color: #3d3636;
+}
+
+/* Botón Hamburguesa para pantallas pequeñas */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.navbar-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+/* Ocultar la lista en pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navbar-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #2566b1;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-list.navbar-list-open {
+    display: flex;
+    background-color: #2566b1;
+  }
+
+  .navbar-item {
+    margin: 10px 0;
+  }
+
+  .navbar-link svg {
+    font-size: 1.8rem; /* Aumenta el tamaño de los íconos en pantallas pequeñas */
+  }
+}

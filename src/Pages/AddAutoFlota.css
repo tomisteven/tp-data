@@ -1,0 +1,105 @@
+/* AddAutoFlota.css */
+
+.add-auto-flota-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 150px auto 85px auto;  /* Añadir margen superior */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-auto-flota-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .add-auto-flota-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .form-group input:focus {
+    border-color: #888;
+    outline: none;
+  }
+  
+  .add-auto-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    color: white;
+    background-color: #ff5dff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .add-auto-button:hover {
+    background-color: #fd96fd;
+  }
+  
+  .cancel-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    color: white;
+    background-color: grey;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cancel-button:hover {
+    background-color: darkgrey;
+  }
+  
+  /* Estilos responsivos para dispositivos móviles */
+  @media (max-width: 768px) {
+    .add-auto-flota-container {
+      padding: 30px;
+      margin: 100px 20px 20px 20px;  /* Ajustar márgenes para móviles */
+    }
+  
+    .add-auto-flota-container h2 {
+      font-size: 24px;
+    }
+  
+    .add-auto-button, .cancel-button {
+      font-size: 18px;
+    }
+  
+    .form-group input {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  

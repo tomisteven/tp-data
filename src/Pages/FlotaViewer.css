@@ -1,0 +1,146 @@
+/* AddFlota.css */
+
+.add-flota-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 65px;  
+    background-color:rgba(0, 0, 0, 0.5);
+}
+  
+h2 {
+    font-size: 28px; /* Tamaño de fuente reducido */
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+h3 {
+    font-size: 40px; /* Tamaño de fuente reducido */
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: blanchedalmond;
+}
+  
+.flota-input {
+    padding: 10px;
+    width: 100%;
+    max-width: 600px; /* Ancho máximo del campo de entrada */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px; /* Tamaño de fuente reducido */
+    margin-bottom: 15px; /* Espacio debajo del campo de texto */
+}
+  
+.save-flota-button {
+    padding: 10px 20px;
+    background-color: #f38dc8; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Tamaño de fuente del botón */
+    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+  
+.save-flota-button:hover {
+    background-color: #ed61ff; /* Cambio de color al pasar el ratón */
+}
+  
+.error-banner {
+    background-color: #ffcccc; /* Color de fondo para el error */
+    color: red; /* Color del texto */
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px; /* Espacio debajo del banner de error */
+}
+  
+.cuadro-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px; /* Ancho máximo del contenedor */
+}
+  
+.auto-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Espacio debajo de la lista de autos */
+}
+  
+.auto-item {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre texto y botón */
+    align-items: center;
+    background-color: #f38dc8; /* Color de fondo */
+    padding: 15px; /* Padding en las tarjetas de autos */
+    border: 1px solid #f38dc8; /* Borde de las tarjetas */
+    border-radius: 10px; /* Esquinas redondeadas */
+    margin-bottom: 10px; /* Espacio entre los autos */
+    color: white; /* Color de texto */
+}
+  
+.add-auto-button {
+    padding: 5px 10px;
+    background-color: rgba(250, 72, 235, 0.8); /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px; /* Tamaño de fuente */
+}
+  
+.add-auto-button:hover {
+    background-color: rgb(255, 143, 246); /* Cambio de color al pasar el ratón */
+}
+  
+.flota-list {
+    display: flex;
+    flex-direction: column;
+}
+  
+.flota-item {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre texto y botón */
+    align-items: center;
+    background-color: #f38dc8; /* Color de fondo */
+    padding: 15px; /* Padding en las tarjetas de autos */
+    border: 1px solid #f38dc8; /* Borde de las tarjetas */
+    border-radius: 10px; /* Esquinas redondeadas */
+    margin-bottom: 10px; /* Espacio entre los autos */
+    color: white; /* Color de texto */
+    font-size: 15px;
+}
+  
+.remove-auto-button {
+    padding: 5px 10px;
+    background-color: #f38dc8; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px; /* Tamaño de fuente */
+}
+  
+.remove-auto-button:hover {
+    background-color: #ed61ff; /* Cambio de color al pasar el ratón */
+}
+  
+@media only screen and (min-width: 768px) {
+    .auto-list,
+    .flota-list {
+        flex-direction: row; /* Cambia a filas en pantallas grandes */
+        flex-wrap: wrap; /* Permite que las tarjetas se muevan a la siguiente línea si es necesario */
+        justify-content: space-between; /* Espacio entre elementos */
+        margin-top: 20px;
+    }
+  
+    .auto-item,
+    .flota-item {
+        flex: 1 0 48%; /* Tarjetas ocupan el 48% del ancho */
+        margin: 19px;
+    }
+
+
+}

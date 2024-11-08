@@ -1,0 +1,93 @@
+.auto-card {
+    
+    background-color: #f38dc8c4;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #f38dc8c4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    width: 320px;
+}
+
+.detail-link {
+display: inline-block;
+margin-top: 10px;
+padding: 5px 10px;
+background-color: #282c34;
+color: white;
+text-decoration: none;
+border-radius: 3px;
+}
+
+.detail-link:hover {
+background-color: #444;
+}
+
+.auto-card.button{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #d60303;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.maintenance-icon {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .bell-icon {
+    color: red;
+    margin-left: 8px;
+    transition: transform 0.2s ease;
+  }
+  
+  /* Animación de la campana al pasar el mouse */
+  .maintenance-icon:hover .bell-icon {
+    transform: rotate(-15deg);
+    animation: swing 0.5s ease forwards;
+  }
+  
+  /* Definición del mensaje emergente */
+  .maintenance-tooltip {
+    visibility: hidden;
+    font-size: 1vw;
+    box-shadow: 10px 5px 5px red;
+    opacity: 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+    position: absolute;
+    top: -5px;
+    left: 110%;
+    white-space: nowrap;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1;
+  }
+  
+  /* Mostrar mensaje emergente al pasar el mouse */
+  .maintenance-icon:hover .maintenance-tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Animación de balanceo */
+  @keyframes swing {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(15deg); }
+    50% { transform: rotate(-15deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+  }
+  

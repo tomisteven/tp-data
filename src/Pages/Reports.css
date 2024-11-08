@@ -1,0 +1,112 @@
+/* Estilos generales para móviles (mobile-first) */
+body {
+  display: flex;
+  justify-content: flex-start;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0; /* Elimina márgenes por defecto */
+}
+
+.reportes-container {
+  width: 90%; /* Contenedor ocupa el 90% del ancho */
+  margin: 0 auto; /* Centrado en la página */
+  padding-top: 20vh;
+}
+
+.title {
+  font-size: 32px; /* Tamaño de fuente para móviles */
+  margin-top: 60px;
+  color: blanchedalmond; /* Color del texto */
+  text-align: center; /* Centrar el título */
+}
+
+.filter-section {
+  margin-bottom: 5vh;
+  font-size: 30px;
+  text-align: center; /* Centrar la sección de filtros */
+  font-style: italic;
+  color: blanchedalmond;
+}
+
+.filter-fields {
+  display: flex;
+  flex-direction: column; /* Columna en móviles */
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-fields input,
+.filter-fields select {
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.generate-report {
+  text-align: center;
+}
+
+.generate-report button {
+  padding: 8px 16px;
+  background-color: #f38dc8;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100%; /* Botón ocupa el 100% */
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.generate-report button:hover {
+  background-color: #ed61ff;
+  transform: translateY(-2px);
+}
+
+/* Ajustes para pantallas medianas (tablets) */
+@media only screen and (min-width: 768px) {
+  .reportes-container {
+    width: 80%; /* Ajusta al 80% del ancho en tablets */
+  }
+
+  .title {
+    font-size: 40px; /* Aumenta tamaño para tablets */
+  }
+
+  .filter-fields {
+    flex-direction: row; /* Cambia a fila en tablets */
+    flex-wrap: wrap; /* Permitir ajuste de línea */
+    justify-content: space-between;
+  }
+
+  .filter-fields input,
+  .filter-fields select {
+    width: 48%; /* Ajusta el ancho de los campos en tablets */
+  }
+}
+
+/* Ajustes para pantallas grandes (escritorio) */
+@media only screen and (min-width: 1024px) {
+  .reportes-container {
+    width: 60%; /* Ajusta al 60% del ancho en escritorio */
+  }
+
+  .title {
+    font-size: 54px; /* Tamaño de fuente más grande */
+  }
+
+  .filter-fields {
+    justify-content: space-around; /* Espacio alrededor de los campos */
+  }
+
+  .filter-fields input,
+  .filter-fields select {
+    width: 45%; /* Ajusta el ancho de los campos en escritorio */
+  }
+
+  .generate-report button {
+    font-size: 18px; /* Tamaño de fuente para el botón en escritorio */
+  }
+}

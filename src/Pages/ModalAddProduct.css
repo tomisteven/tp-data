@@ -1,0 +1,148 @@
+/* Estilos del contenedor del modal */
+#modal-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 82%;
+  color: black;
+  position: fixed;
+  margin: auto; /* Centra el modal horizontal y verticalmente */
+  margin-top: 6.5%;
+  inset: 0;
+  border-radius: 8px; /* Cambiado a un valor más visible */
+  background-color: white;
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+.my-swal {
+  z-index: 20;
+}
+
+/* Estilo del título */
+#tittle {
+  color: rgb(29, 83, 153);
+  font-size: 45px;
+  text-align: center; /* Centra el título */
+  margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Estilo del formulario */
+#form-producto {
+  width: 100%; /* Asegura que el formulario use todo el ancho */
+  height: auto; /* Ajuste automático para mejorar la vista */
+}
+
+/* Estilo de los inputs y select */
+.input-producto,
+#modal-select-categoria {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Estilo de los botones */
+#btn-add-producto:disabled {
+  background-color: grey;
+}
+
+#btn-close-modal {
+  background-color: grey;
+  margin-right: 50px;
+}
+
+#btn-add-producto,
+#btn-close-modal {
+  display: inline;
+  padding: 10px; /* Mejorar padding */
+  margin: 10px auto; /* Centrar los botones */
+  width: 30%; /* Ancho uniforme */
+}
+
+/* Estilo para el mensaje de error */
+.error-message {
+  color: red; /* Cambiado a rojo para destacar errores */
+  font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+  text-align: center; /* Centra el mensaje de error */
+  margin: 10px 0; /* Espacio alrededor del mensaje de error */
+  background-color: white;
+  height: 20px;
+  margin-bottom: 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  #modal-container {
+    width: 80%; /* Aumenta el ancho del modal */
+    height: auto; /* Ajuste automático de la altura */
+    margin-top: 8%; /* Mayor espacio en la parte superior */
+  }
+
+  #tittle {
+    font-size: 30px; /* Tamaño de fuente reducido */
+  }
+
+  .input-producto,
+  #modal-select-categoria {
+    height: 37px; /* Ajuste automático de la altura */
+  }
+
+  #btn-add-producto,
+  #btn-close-modal {
+    width: 20%; /* Botones más anchos */
+    height: 7%;
+    margin-left: 120px; /* Centrar botones */
+  }
+}
+
+@media (max-width: 768px) {
+  #modal-container {
+    width: 90%; /* Aumentar el ancho del modal */
+    height: 430px;
+  }
+
+  #tittle {
+    font-size: 25px; /* Tamaño de fuente reducido */
+  }
+
+  .input-producto,
+  #modal-select-categoria {
+    height: 33px; /* Ajuste automático de la altura */
+    padding: 8px; /* Espaciado más pequeño */
+  }
+
+  #btn-add-producto,
+  #btn-close-modal {
+    margin-left: 70px;
+    width: 30%; /* Ancho de los botones */
+  }
+}
+
+@media (max-width: 480px) {
+  #modal-container {
+    margin-top: 20%;
+    height: 410px; /* Ajustar la altura */
+  }
+
+  #tittle {
+    font-size: large; /* Reducir tamaño de fuente */
+  }
+
+  .input-producto,
+  #modal-select-categoria {
+    padding: 8px; /* Espaciado más pequeño */
+    height: 33px;
+  }
+
+  #btn-add-producto,
+  #btn-close-modal {
+    margin-left: 40px;
+    width: 30%; /* Ancho de los botones */
+  }
+}

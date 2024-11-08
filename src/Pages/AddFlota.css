@@ -1,0 +1,263 @@
+/* Estilos generales para móviles (Mobile First) */
+
+.add-flota-container {
+    padding: 10px;
+    background-color: #faf3dd; /* Verde menta suave */
+}
+
+.input-container,
+.crear-flota-container,
+.flotas-tables {
+    margin-bottom: 10px;
+}
+
+.error-banner {
+    color: #FF6F61; /* Rojo pastel */
+    font-size: 0.8em;
+}
+
+.flota-input {
+    margin-right: 5px;
+    width: 100%; /* Ocupa todo el ancho en móviles */
+}
+
+.save-flota-button {
+<<<<<<< HEAD
+    padding: 8px;
+    background-color: #283618; /* Melocotón pastel */
+=======
+    padding: 10px;
+    background-color: #f52ceb; /* Melocotón pastel */
+>>>>>>> 4a67be66d344bd4f97958e7f2e18de4c082bcafa
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Botón a pantalla completa en móviles */
+    font-size: 0.9em; /* Tamaño de fuente reducido */
+}
+
+.save-flota-button:hover {
+<<<<<<< HEAD
+    background-color: #283618;
+=======
+    background-color: #f30acc; /* Un tono más oscuro del melocotón */
+}
+.flotas-tables {
+    margin-top: 20px;
+>>>>>>> 4a67be66d344bd4f97958e7f2e18de4c082bcafa
+}
+
+.flota-table-container {
+<<<<<<< HEAD
+    margin-bottom: 10px;
+    background-color: #a4ac86;
+    border: 1px solid #606C38;
+=======
+    margin-bottom: 20px;
+    background-color: #12627a;
+    border: 1px solid #e017a4;
+>>>>>>> 4a67be66d344bd4f97958e7f2e18de4c082bcafa
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Separación de la tabla en dispositivos móviles */
+/* Estilos para dispositivos móviles */
+@media (max-width: 390px) { /* iPhone SE */
+    .flota-table-container {
+        margin: 0 5px; /* Separación leve desde los bordes */
+        padding: 8px;
+    }
+
+    .flota-header {
+        padding: 6px;
+        font-size: 0.9em;
+    }
+
+    .flota-header h3 {
+        font-size: 0.9em;
+    }
+
+    /* Contenedor para el input y el botón, con alineación en fila */
+    .input-button-container {
+        display: flex;
+        align-items: center; /* Alinea verticalmente el input y el botón */
+    }
+
+    .flota-input {
+        flex: 1; /* Ocupa el espacio disponible */
+        margin-left: 6px;
+    }
+
+    .save-flota-button {
+        flex: 1;
+        padding: 0px 0px;
+        font-size: 0.7em;
+        border-radius: 4px;
+        background-color: #283618;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .save-flota-button:hover {
+        background-color: #1e2e0e;
+    }
+
+    /* Ajuste para botones en la tabla */
+    .edit-flota-button,
+    .delete-flota-button {
+        padding: 2px 4px;
+        font-size: 0.6em;
+        margin: 1px;
+        border-radius: 2px;
+    }
+
+    .flota-table {
+        width: 100%;
+        font-size: 0.7em;
+    }
+
+    .flota-table th, .flota-table td {
+        padding: 2px 4px;
+        font-size: 0.65em;
+    }
+
+    .flota-table .optional-column {
+        display: none;
+    }
+
+    .flota-table td, .flota-table th {
+        word-wrap: break-word;
+        white-space: normal;
+    }
+}
+
+
+
+.flota-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    padding: 10px;
+<<<<<<< HEAD
+    background-color: #becd8f;
+    color: #FEFAE0;
+=======
+    background-color: #12627a; 
+    color: FEFAE0;
+>>>>>>> 4a67be66d344bd4f97958e7f2e18de4c082bcafa
+    border-radius: 8px 8px 0 0;
+}
+
+.flota-header h3 {
+    margin: 0;
+}
+
+.flota-actions {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.edit-flota-button,
+.delete-flota-button {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1.5em;
+}
+
+.flota-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.flota-table th, .flota-table td {
+<<<<<<< HEAD
+    border: 1px solid #606C38;
+    padding: 6px;
+=======
+    border: 1px solid #6c385f;
+    padding: 8px;
+>>>>>>> 4a67be66d344bd4f97958e7f2e18de4c082bcafa
+    text-align: left;
+    color: black;
+    font-size: 0.9em;
+}
+
+.flota-table th {
+<<<<<<< HEAD
+    background-color: #dda15e;
+=======
+    background-color: #f9a8fc; /* Fondo claro neutro */
+>>>>>>> 4a67be66d344bd4f97958e7f2e18de4c082bcafa
+}
+
+.flota-table tbody tr:nth-child(even) {
+    background-color: #F9F9F9;
+}
+
+<<<<<<< HEAD
+/* Media Queries para pantallas medianas y grandes (Tablets y Escritorio) */
+@media (min-width: 768px) {
+    .add-flota-container {
+        padding: 20px;
+    }
+
+    .flota-input {
+        width: auto;
+    }
+
+    .save-flota-button {
+        width: auto;
+    }
+
+    .flota-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .edit-flota-button,
+    .delete-flota-button {
+        font-size: 1.8em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .add-flota-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+=======
+.h3 {
+    margin: 0;
+    color: blanchedalmond; /* Cambia el color aquí */
+}
+
+.flotas-header {
+    color: blanchedalmond; /* Cambia el color aquí */
+}
+>>>>>>> 4a67be66d344bd4f97958e7f2e18de4c082bcafa
+
+    .flota-table-container {
+        padding: 15px;
+    }
+
+    .save-flota-button {
+        padding: 12px 20px;
+    }
+
+    .flota-table th, .flota-table td {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .error-banner {
+        font-size: 1em;
+    }
+}

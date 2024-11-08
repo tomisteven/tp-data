@@ -1,0 +1,92 @@
+@import 'leaflet/dist/leaflet.css';
+
+
+#img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2{
+  margin-top: 60px;
+  color: blanchedalmond;
+}
+
+.my-route-container {
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  margin-top: 80px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  gap: 20px; /* Añadir un pequeño espacio entre las secciones */
+}
+
+.route-list {
+  flex: 1 1 30%; /* Aquí, el 1 es para que se pueda expandir, y el 30% es el tamaño inicial */
+  max-height: 600px;
+  overflow-y: auto;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.map-section {
+  flex: 2 1 65%; /* Esto permite que la sección de mapa ocupe más espacio */
+  padding: 10px;
+}
+
+.route-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  cursor: pointer; /* Cambiar el cursor para indicar que es seleccionable */
+  transition: background-color 0.2s ease; /* Transición para suavizar el cambio de color */
+  position: relative; /* Asegurarse de que no haya problemas con superposición */
+  display: block; /* Asegura que ocupe todo el ancho disponible */
+}
+
+.route-item:hover {
+  background-color: #e0e0e0; /* Tono más oscuro para resaltar al pasar el mouse */
+}
+
+.route-item:active {
+  background-color: #d0d0d0; /* Cambio de color al hacer clic para dar una retroalimentación visual */
+}
+
+/* Para mejorar la visibilidad de los items al hacer hover, asegurarse que la lista esté bien definida */
+.route-list ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.route-list li {
+  padding: 10px;
+  margin: 5px 0;
+}
+
+
+.complete-button {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.complete-button:hover {
+  background-color: #45a049;
+}
+@media (max-width: 768px) {
+  .my-route-container {
+    flex-direction: column; /* Se apilan las secciones */
+  }
+
+  .route-list, .map-section {
+    width: 100%;
+    margin-bottom: 20px; /* Separación entre las secciones */
+  }
+}

@@ -1,0 +1,140 @@
+/* Reset de estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del fondo */
+body {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("Images/Mecanicos-certificados-en-nuestras-marcas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    background-attachment: fixed;
+}
+
+/* Contenedor principal de la gestión de mecánicos */
+.mechanic-management-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+    min-height: calc(100vh - 80px);
+    margin-top: 80px;
+}
+
+/* Título principal */
+.title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de búsqueda y botón */
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.mechanic-search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Botón de agregar mecánico */
+.add-button {
+    padding: 12px 25px;
+    background-color: #525252;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.add-button:hover {
+    background-color: #b30000;
+}
+
+/* Lista de mecánicos */
+.mechanic-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+/* Estilos de las tarjetas de mecánicos */
+.mechanic-card {
+    background-color: #f38dc8be;
+    padding: 15px;
+    border: 2px solid #f38dc8be;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: large;
+}
+
+.mechanic-card p {
+    margin: 5px 0;
+}
+
+/* Contenedor de los botones Editar y Eliminar */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* Botón Editar */
+.edit-button {
+    padding: 8px 15px;
+    background-color: #e946a5;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+    background-color: #f375aa;
+}
+
+/* Botón Eliminar */
+.delete-button {
+    padding: 8px 15px;
+    background-color: #e946a5;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #f375aa;
+}
+
+/* Ajustes para pantallas grandes (escritorio) */
+@media only screen and (min-width: 1024px) {
+    .mechanic-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .mechanic-card {
+        width: auto;
+    }
+}

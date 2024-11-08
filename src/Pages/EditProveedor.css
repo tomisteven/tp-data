@@ -1,0 +1,101 @@
+.edit-proveedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.edit-proveedor h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.edit-proveedor form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+}
+
+.edit-proveedor form div {
+  margin-bottom: 15px;
+}
+
+.edit-proveedor label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.edit-proveedor input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-button {
+  padding: 10px;
+  background-color: #ff5dff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+.submit-button:hover {
+  background-color: #fd96fd;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+#btn-cancelar {
+  padding: 10px;
+  background-color: #5c505c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  width: 100%;
+  font-size: 35px;
+  max-width: 300px;
+}
+
+#btn-cancelar:hover {
+  background-color: darkgrey;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .edit-proveedor h2 {
+    font-size: 28px;
+  }
+
+  #btn-cancelar,
+  .submit-button {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .edit-proveedor {
+    padding: 40px;
+  }
+
+  .edit-proveedor h2 {
+    font-size: 32px;
+  }
+
+  #btn-cancelar,
+  .submit-button {
+    max-width: 500px;
+  }
+}

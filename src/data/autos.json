@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "marca": "Ford",
+      "modelo": "Fiesta",
+      "anio": 2021,
+      "kilometraje": 15000,
+      "codigo_qr": "QR123456789",
+      "nro_patente": "ABC1234"
+    },
+    {
+      "id": 2,
+      "marca": "Volkswagen",
+      "modelo": "Golf",
+      "anio": 2019,
+      "kilometraje": 30000,
+      "codigo_qr": "QR987654321",
+      "nro_patente": "XYZ5678"
+    },
+    {
+      "id": 3,
+      "marca": "Suzuki",
+      "modelo": "Swift",
+      "anio": 2020,
+      "kilometraje": 22000,
+      "codigo_qr": "QR112233445",
+      "nro_patente": "JKL9101"
+    }
+  ]
+  
